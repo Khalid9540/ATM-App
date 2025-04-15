@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right,
+            #434399, #11afa4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.login-pg,
+.menu-pg,
+.deposit-pg,
+.withdraw-pg {
+    /* background: linear-gradient(to top,
+            aqua, #12eb07); */
+    background-color: azure;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+
+    h5,
+    h2,
+    a {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    input {
+        background-color: white;
+        border: 1px solid gray;
+        font-size: 15px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    p {
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: rgb(38, 31, 129);
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+.menu-pg,
+.deposit-pg,
+.withdraw-pg{
+    display: none;
+}
+
+.deposit-pg {
+    h2 {
+        font-size: 33px;
+    }
+}
+
+.login-pg{
+    display: flex;
+}
+
+.withdraw-pg {
+    h2 {
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .login-pg,
+    .menu-pg,
+    .deposit-pg,
+    .withdraw-pg {
+        width: 50%;
+    }
+}
